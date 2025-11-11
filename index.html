@@ -20,8 +20,10 @@
     
 </head>
 <body>
-    <h1>Counter</h1>
+    <h1 id = "titulo">Counter</h1>
     <h2>Strike</h2>
+    <button onclick="mudar()">Clique</button>
+
 
 </body>
 <script>
@@ -43,8 +45,13 @@
     } else {
         console.log("Menor de idade")
     }
-    for (let i = 1)
-
+    for (let i = 1; i <= 10; i++) {
+        console.log("Número: " + i);
+    }
+    function mudar() {
+        document.getElementById("titulo").innerText = "Texto alterado"; 
+    }
+    
 
 </script>
 </html>
